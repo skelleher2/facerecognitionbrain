@@ -1,0 +1,12 @@
+.form {
+    width: 700px;
+    background-color:#def;
+    background-image: repeating-linear-gradient(45deg, var(--t) 0, var(--t) 32px, var(--c) 32px, var(--c) 44px, var(--t) 44px, var(--t) 56px, var(--c) 56px, var(--c) 68px, var(--t) 0),
+    repeating-linear-gradient(-45deg, var(--t) 0, var(--t) 32px, var(--c) 32px, var(--c) 44px, var(--t) 44px, var(--t) 56px, var(--c) 56px, var(--c) 68px, var(--t) 0),
+    linear-gradient(to bottom left, #04C8DE, #FF5EDF);
+    display:flex;
+    margin: 0;
+    --c : rgba(255,255,255,0.7);
+    --t : transparent;
+  
+}
