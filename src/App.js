@@ -84,7 +84,7 @@ class App extends Component {
         this.state.input)
       .then(response => {
         if (response) {
-          fetch('https://facial-recognition-machine.herokuapp.com/imageurl', {
+          fetch('https://facial-recognition-machine.herokuapp.com/imageUrl', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -96,7 +96,6 @@ class App extends Component {
               this.setState(Object.assign(this.state.user, { entries: count}))
             })
           
-
         }
         this.displayFaceBox(this.calculateFaceLocation(response))
       })
