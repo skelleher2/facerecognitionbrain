@@ -84,7 +84,7 @@ class App extends Component {
         this.state.input)
       .then(response => {
         if (response) {
-          fetch('https://facial-recognition-machine.herokuapp.com/image', {
+          fetch('https://facial-recognition-machine.herokuapp.com/imageurl', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
